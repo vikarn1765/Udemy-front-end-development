@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="ud-app-loader ud-component--header-v6--header udlite-header ud-app-loaded" data-module-id="common/udlite/desktop" data-module-args="{&quot;tryUFBPlacements&quot;:{&quot;bar&quot;:&quot;ufb_header&quot;,&quot;mobile&quot;:&quot;ufb_header&quot;,&quot;profile&quot;:&quot;account-menu&quot;},&quot;searchPhrase&quot;:null,&quot;mobileAppLink&quot;:{&quot;url&quot;:&quot;/mobile/&quot;},&quot;isInstructorSignupEnabled&quot;:false,&quot;isLoggedIn&quot;:false,&quot;productLink&quot;:{&quot;url&quot;:&quot;https://business.udemy.com/request-demo/?ref=ufb_header\u0026mx_pg=home-page\u0026locale=en_US&quot;,&quot;isEnabled&quot;:true,&quot;text&quot;:&quot;Udemy for Business&quot;}}" data-module-priority="-10" ng-non-bindable="">
+        <div class="header--mobile-header--2E_HX"><span id="header-toggle-search-bar" class="full-page-overlay-checkbox" data-type="checkbox" data-checked="" aria-hidden="false" style="display: none;"></span>
+            <div class="header--header--1ffLd" aria-hidden="false">
+                <div class="header--row--29n3s">
+                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md udlite-btn-icon udlite-btn-icon-large udlite-mobile-header-btn" data-css-toggle-id="header-toggle-side-nav">
+                        <svg aria-label="Open side drawer" focusable="false" class="udlite-icon udlite-icon-medium udlite-icon-color-neutral">
+                            <use xlink:href="#icon-menu"></use>
+                        </svg>
+                    </button>
+                    <div class="header--button-spacer--2-y_b"></div>
+                    <div class="header--row--29n3s header--middle--F2ENI">
+                        <a href="/"><img src="/staticx/udemy/images/v6/logo-coral.svg" alt="Udemy" width="96" height="28" style="vertical-align: middle;"></a>
+                    </div>
+                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md udlite-btn-icon udlite-btn-icon-large udlite-mobile-header-btn" data-css-toggle-id="header-toggle-search-bar">
+                        <svg aria-label="Open search" focusable="false" class="udlite-icon udlite-icon-medium udlite-icon-color-neutral">
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                    </button>
+                    <a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md udlite-btn-icon udlite-btn-icon-large udlite-mobile-header-btn" href="/cart/">
+                        <svg aria-label="Go to cart" focusable="false" class="udlite-icon udlite-icon-medium udlite-icon-color-neutral">
+                            <use xlink:href="#icon-cart"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header--search-bar--1M3Y7 header--search-bar-layer--2Wow0" role="dialog" tabindex="-1" aria-labelledby="header-mobile-search-bar-title">
+                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md udlite-btn-icon udlite-btn-icon-large udlite-mobile-header-btn header--search-bar-close--WDisN" data-css-toggle-id="header-toggle-search-bar">
+                        <svg aria-label="Close search" focusable="false" class="udlite-icon udlite-icon-medium udlite-icon-color-neutral">
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </button><span class="udlite-sr-only">Search bar</span>
+                    <form action="/courses/search/" class="udlite-search-form-autocomplete header--search-bar-form--2OElp">
+                        <div class="udlite-search-form-autocomplete-input-group udlite-search-form-autocomplete-input-group-reversed udlite-form-group">
+                            <label for="header-mobile-search-bar" class="udlite-sr-only udlite-form-label udlite-heading-sm">Search for anything</label>
+                            <input placeholder="Search for anything" name="q" autocomplete="off" id="header-mobile-search-bar" class="udlite-text-input udlite-text-input-large udlite-text-md udlite-search-form-autocomplete-input js-header-search-field" value="">
+                            <button type="submit" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md udlite-btn-icon udlite-btn-icon-large">
+                                <svg aria-label="Submit search" focusable="false" class="udlite-icon udlite-icon-medium udlite-icon-color-neutral">
+                                    <use xlink:href="#icon-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="side-drawer--dialog-container--2OxIT"><span id="header-toggle-side-nav" class="full-page-overlay-checkbox side-drawer--main-drawer-checkbox--MjJ8D" data-type="checkbox" data-checked="" style="display: none;" aria-hidden="false"></span>
+                <div role="presentation" class="udlite-btn udlite-btn-large udlite-btn-link udlite-heading-md full-page-overlay--full-page-overlay--2EGvi" data-css-toggle-id="header-toggle-side-nav" aria-hidden="false"></div><span id="header-toggle-side-nav-main" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="checked" aria-hidden="false" style="display: none;"></span>
+                <div class="js-drawer side-drawer--side-drawer--2btsf side-drawer--side-left--Pmw8k" role="dialog" tabindex="-1" aria-labelledby="u951-side-drawer-title--14" aria-modal="false">
+                    <nav class="side-drawer--drawer-container--fv87h">
+                        <div class="mobile-nav--nav--1brOS side-drawer--drawer-content--1xUDo">
+                            <h2 id="u951-side-drawer-title--14" class="udlite-heading-lg udlite-sr-only">Site navigation</h2>
+                            <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                <li><a href="https://www.udemy.com/join/login-popup/?locale=en_US&amp;response_type=html&amp;next=https%3A%2F%2Fwww.udemy.com%2F" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-link"><span class="udlite-block-list-item-content">Log in</span></a></li>
+                                <li><a href="https://www.udemy.com/join/signup-popup/?locale=en_US&amp;response_type=html&amp;next=https%3A%2F%2Fwww.udemy.com%2F" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-link"><span class="udlite-block-list-item-content">Sign up</span></a></li>
+                            </ul>
+                            <div class="udlite-heading-sm mobile-nav--nav-section-heading--3OccJ">Most popular</div>
+                            <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                <li>
+                                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="most-popular-subcategory-item" data-css-toggle-id="header-toggle-side-nav-popular-topics-of-8"><span class="udlite-block-list-item-content">Web Development</span>
+                                        <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                            <use xlink:href="#icon-next"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="most-popular-subcategory-item" data-css-toggle-id="header-toggle-side-nav-popular-topics-of-10"><span class="udlite-block-list-item-content">Mobile Apps</span>
+                                        <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                            <use xlink:href="#icon-next"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="most-popular-subcategory-item" data-css-toggle-id="header-toggle-side-nav-popular-topics-of-14"><span class="udlite-block-list-item-content">Game Development</span>
+                                        <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                            <use xlink:href="#icon-next"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="most-popular-subcategory-item" data-css-toggle-id="header-toggle-side-nav-popular-topics-of-24"><span class="udlite-block-list-item-content">Finance</span>
+                                        <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                            <use xlink:href="#icon-next"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="most-popular-subcategory-item" data-css-toggle-id="header-toggle-side-nav-popular-topics-of-26"><span class="udlite-block-list-item-content">Entrepreneurship</span>
+                                        <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                            <use xlink:href="#icon-next"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="most-popular-subcategory-item" data-css-toggle-id="header-toggle-side-nav-popular-topics-of-44"><span class="udlite-block-list-item-content">Data &amp; Analytics</span>
+                                        <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                            <use xlink:href="#icon-next"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="most-popular-subcategory-item" data-css-toggle-id="header-toggle-side-nav-popular-topics-of-62"><span class="udlite-block-list-item-content">Digital Marketing</span>
+                                        <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                            <use xlink:href="#icon-next"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="most-popular-subcategory-item" data-css-toggle-id="header-toggle-side-nav-popular-topics-of-110"><span class="udlite-block-list-item-content">Graphic Design</span>
+                                        <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                            <use xlink:href="#icon-next"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="most-popular-subcategory-item" data-css-toggle-id="header-toggle-side-nav-popular-topics-of-132"><span class="udlite-block-list-item-content">IT Certification</span>
+                                        <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                            <use xlink:href="#icon-next"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="most-popular-subcategory-item" data-css-toggle-id="header-toggle-side-nav-popular-topics-of-142"><span class="udlite-block-list-item-content">Personal Transformation</span>
+                                        <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                            <use xlink:href="#icon-next"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-categories"><span class="udlite-block-list-item-content">All categories</span>
+                                        <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                            <use xlink:href="#icon-next"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="udlite-heading-sm mobile-nav--nav-section-heading--3OccJ">More from Udemy</div>
+                            <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                <li><a href="https://business.udemy.com/request-demo/?ref=ufb_header&amp;mx_pg=home-page&amp;locale=en_US" target="_blank" rel="noopener" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="try-ufb-link"><span class="udlite-block-list-item-content">Udemy for Business</span></a></li>
+                                <li><a href="/mobile/" target="_blank" rel="noopener noreferrer" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">Get the app</span></a></li>
+                                <li><a href="/invite/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">Invite friends</span></a></li>
+                                <li><a href="/support/" target="_blank" rel="noopener noreferrer" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">Help</span></a></li>
+                            </ul>
+                        </div>
+                        <div><span id="header-toggle-side-nav-categories" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                            <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                                <div class="side-drawer--drawer-content--1xUDo">
+                                    <ul class="unstyled-list udlite-block-list">
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                                <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-previous"></use>
+                                                </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-288"><span class="udlite-block-list-item-content">Development</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-268"><span class="udlite-block-list-item-content">Business</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-328"><span class="udlite-block-list-item-content">Finance &amp; Accounting</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-294"><span class="udlite-block-list-item-content">IT &amp; Software</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-292"><span class="udlite-block-list-item-content">Office Productivity</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-296"><span class="udlite-block-list-item-content">Personal Development</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-269"><span class="udlite-block-list-item-content">Design</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-290"><span class="udlite-block-list-item-content">Marketing</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-274"><span class="udlite-block-list-item-content">Lifestyle</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-273"><span class="udlite-block-list-item-content">Photography</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-276"><span class="udlite-block-list-item-content">Health &amp; Fitness</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-278"><span class="udlite-block-list-item-content">Music</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="category-item" data-css-toggle-id="header-toggle-side-nav-subcategories-of-300"><span class="udlite-block-list-item-content">Teaching &amp; Academics</span>
+                                                <svg aria-label="Expand" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                    <use xlink:href="#icon-next"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div-l1>
+                        </div><span id="header-toggle-side-nav-popular-topics-of-8" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                        <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                            <div class="side-drawer--drawer-content--1xUDo">
+                                <ul class="unstyled-list udlite-block-list">
+                                    <li>
+                                        <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                            <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                <use xlink:href="#icon-previous"></use>
+                                            </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                    </li>
+                                </ul>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/courses/development/web-development/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--bold--P2i_i udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="subcategory-item-all"><span class="udlite-block-list-item-content">All Web Development</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/web-development/"><span class="udlite-block-list-item-content">Web Development</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/javascript/"><span class="udlite-block-list-item-content">JavaScript</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/react/"><span class="udlite-block-list-item-content">React</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/angular/"><span class="udlite-block-list-item-content">Angular</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/css/"><span class="udlite-block-list-item-content">CSS</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/php/"><span class="udlite-block-list-item-content">PHP</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/nodejs/"><span class="udlite-block-list-item-content">Node.Js</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/python/"><span class="udlite-block-list-item-content">Python</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/wordpress/"><span class="udlite-block-list-item-content">WordPress</span></a></li>
+                                </ul>
+                            </div>
+                        </div-l1><span id="header-toggle-side-nav-popular-topics-of-10" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                        <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                            <div class="side-drawer--drawer-content--1xUDo">
+                                <ul class="unstyled-list udlite-block-list">
+                                    <li>
+                                        <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                            <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                <use xlink:href="#icon-previous"></use>
+                                            </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                    </li>
+                                </ul>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/courses/development/mobile-apps/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--bold--P2i_i udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="subcategory-item-all"><span class="udlite-block-list-item-content">All Mobile Apps</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/google-flutter/"><span class="udlite-block-list-item-content">Google Flutter</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/android-development/"><span class="udlite-block-list-item-content">Android Development</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/ios-development/"><span class="udlite-block-list-item-content">iOS Development</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/swift/"><span class="udlite-block-list-item-content">Swift</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/react-native/"><span class="udlite-block-list-item-content">React Native</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/dart-programming-language/"><span class="udlite-block-list-item-content">Dart Programming Language</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/mobile-development/"><span class="udlite-block-list-item-content">Mobile Development</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/kotlin/"><span class="udlite-block-list-item-content">Kotlin</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/redux-framework/"><span class="udlite-block-list-item-content">Redux Framework</span></a></li>
+                                </ul>
+                            </div>
+                        </div-l1><span id="header-toggle-side-nav-popular-topics-of-14" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                        <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                            <div class="side-drawer--drawer-content--1xUDo">
+                                <ul class="unstyled-list udlite-block-list">
+                                    <li>
+                                        <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                            <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                <use xlink:href="#icon-previous"></use>
+                                            </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                    </li>
+                                </ul>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/courses/development/game-development/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--bold--P2i_i udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="subcategory-item-all"><span class="udlite-block-list-item-content">All Game Development</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/unity/"><span class="udlite-block-list-item-content">Unity</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/game-development/"><span class="udlite-block-list-item-content">Game Development Fundamentals</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/unreal-engine/"><span class="udlite-block-list-item-content">Unreal Engine</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/c-sharp/"><span class="udlite-block-list-item-content">C#</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/3d-game-development/"><span class="udlite-block-list-item-content">3D Game Development</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/c-plus-plus/"><span class="udlite-block-list-item-content">C++</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/2d-game-development/"><span class="udlite-block-list-item-content">2D Game Development</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/unreal-engine-blueprints/"><span class="udlite-block-list-item-content">Unreal Engine Blueprints</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/blender/"><span class="udlite-block-list-item-content">Blender</span></a></li>
+                                </ul>
+                            </div>
+                        </div-l1><span id="header-toggle-side-nav-popular-topics-of-24" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                        <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                            <div class="side-drawer--drawer-content--1xUDo">
+                                <ul class="unstyled-list udlite-block-list">
+                                    <li>
+                                        <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                            <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                <use xlink:href="#icon-previous"></use>
+                                            </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                    </li>
+                                </ul>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/courses/business/finance-courses/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--bold--P2i_i udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="subcategory-item-all"><span class="udlite-block-list-item-content">All Finance</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/financial-analysis/"><span class="udlite-block-list-item-content">Financial Analysis</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/stock-trading/"><span class="udlite-block-list-item-content">Stock Trading</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/investing/"><span class="udlite-block-list-item-content">Investing</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/finance/"><span class="udlite-block-list-item-content">Finance Fundamentals</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/forex/"><span class="udlite-block-list-item-content">Forex</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/financial-modeling/"><span class="udlite-block-list-item-content">Financial Modeling</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/accounting/"><span class="udlite-block-list-item-content">Accounting</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/excel/"><span class="udlite-block-list-item-content">Excel</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/options-trading/"><span class="udlite-block-list-item-content">Options Trading</span></a></li>
+                                </ul>
+                            </div>
+                        </div-l1><span id="header-toggle-side-nav-popular-topics-of-26" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                        <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                            <div class="side-drawer--drawer-content--1xUDo">
+                                <ul class="unstyled-list udlite-block-list">
+                                    <li>
+                                        <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                            <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                <use xlink:href="#icon-previous"></use>
+                                            </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                    </li>
+                                </ul>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/courses/business/entrepreneurship/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--bold--P2i_i udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="subcategory-item-all"><span class="udlite-block-list-item-content">All Entrepreneurship</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/business-fundamentals/"><span class="udlite-block-list-item-content">Business Fundamentals</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/amazon-fba/"><span class="udlite-block-list-item-content">Amazon FBA</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/dropshipping/"><span class="udlite-block-list-item-content">Dropshipping</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/entrepreneurship/"><span class="udlite-block-list-item-content">Entrepreneurship Fundamentals</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/business-strategy/"><span class="udlite-block-list-item-content">Business Strategy</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/startup/"><span class="udlite-block-list-item-content">Startup</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/business-plan/"><span class="udlite-block-list-item-content">Business Plan</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/shopify/"><span class="udlite-block-list-item-content">Shopify</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/blogging/"><span class="udlite-block-list-item-content">Blogging</span></a></li>
+                                </ul>
+                            </div>
+                        </div-l1><span id="header-toggle-side-nav-popular-topics-of-44" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                        <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                            <div class="side-drawer--drawer-content--1xUDo">
+                                <ul class="unstyled-list udlite-block-list">
+                                    <li>
+                                        <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                            <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                <use xlink:href="#icon-previous"></use>
+                                            </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                    </li>
+                                </ul>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/courses/business/data-and-analytics/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--bold--P2i_i udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="subcategory-item-all"><span class="udlite-block-list-item-content">All Data &amp; Analytics</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/sql/"><span class="udlite-block-list-item-content">SQL</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/microsoft-power-bi/"><span class="udlite-block-list-item-content">Microsoft Power BI</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/tableau/"><span class="udlite-block-list-item-content">Tableau</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/business-analysis/"><span class="udlite-block-list-item-content">Business Analysis</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/business-intelligence/"><span class="udlite-block-list-item-content">Business Intelligence</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/data-analysis/"><span class="udlite-block-list-item-content">Data Analysis</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/mysql/"><span class="udlite-block-list-item-content">MySQL</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/data-modeling/"><span class="udlite-block-list-item-content">Data Modeling</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/big-data/"><span class="udlite-block-list-item-content">Big Data</span></a></li>
+                                </ul>
+                            </div>
+                        </div-l1><span id="header-toggle-side-nav-popular-topics-of-62" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                        <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                            <div class="side-drawer--drawer-content--1xUDo">
+                                <ul class="unstyled-list udlite-block-list">
+                                    <li>
+                                        <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                            <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                <use xlink:href="#icon-previous"></use>
+                                            </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                    </li>
+                                </ul>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/courses/marketing/digital-marketing/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--bold--P2i_i udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="subcategory-item-all"><span class="udlite-block-list-item-content">All Digital Marketing</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/digital-marketing/"><span class="udlite-block-list-item-content">Digital Marketing</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/google-ads/"><span class="udlite-block-list-item-content">Google Ads (Adwords)</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/social-media-marketing/"><span class="udlite-block-list-item-content">Social Media Marketing</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/google-ads-certification/"><span class="udlite-block-list-item-content">Google Ads (AdWords) Certification</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/marketing-strategy/"><span class="udlite-block-list-item-content">Marketing Strategy</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/internet-marketing/"><span class="udlite-block-list-item-content">Internet Marketing</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/email-marketing/"><span class="udlite-block-list-item-content">Email Marketing</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/google-analytics/"><span class="udlite-block-list-item-content">Google Analytics</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/facebook-ads/"><span class="udlite-block-list-item-content">Facebook Ads</span></a></li>
+                                </ul>
+                            </div>
+                        </div-l1><span id="header-toggle-side-nav-popular-topics-of-110" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                        <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                            <div class="side-drawer--drawer-content--1xUDo">
+                                <ul class="unstyled-list udlite-block-list">
+                                    <li>
+                                        <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                            <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                <use xlink:href="#icon-previous"></use>
+                                            </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                    </li>
+                                </ul>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/courses/design/graphic-design/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--bold--P2i_i udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="subcategory-item-all"><span class="udlite-block-list-item-content">All Graphic Design</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/photoshop/"><span class="udlite-block-list-item-content">Photoshop</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/graphic-design/"><span class="udlite-block-list-item-content">Graphic Design</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/adobe-illustrator/"><span class="udlite-block-list-item-content">Adobe Illustrator</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/drawing/"><span class="udlite-block-list-item-content">Drawing</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/digital-painting/"><span class="udlite-block-list-item-content">Digital Painting</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/indesign/"><span class="udlite-block-list-item-content">InDesign</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/character-design/"><span class="udlite-block-list-item-content">Character Design</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/canva/"><span class="udlite-block-list-item-content">Canva</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/logo-design/"><span class="udlite-block-list-item-content">Logo Design</span></a></li>
+                                </ul>
+                            </div>
+                        </div-l1><span id="header-toggle-side-nav-popular-topics-of-132" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                        <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                            <div class="side-drawer--drawer-content--1xUDo">
+                                <ul class="unstyled-list udlite-block-list">
+                                    <li>
+                                        <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                            <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                <use xlink:href="#icon-previous"></use>
+                                            </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                    </li>
+                                </ul>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/courses/it-and-software/it-certification/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--bold--P2i_i udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="subcategory-item-all"><span class="udlite-block-list-item-content">All IT Certification</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/aws-certification/"><span class="udlite-block-list-item-content">AWS Certification</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/aws-certified-solutions-architect-associate/"><span class="udlite-block-list-item-content">AWS Certified Solutions Architect - Associate</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/microsoft-certification/"><span class="udlite-block-list-item-content">Microsoft Certification</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/comptia-a/"><span class="udlite-block-list-item-content">CompTIA A+</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/aws-certified-cloud-practitioner/"><span class="udlite-block-list-item-content">AWS Certified Cloud Practitioner</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/cisco-ccna/"><span class="udlite-block-list-item-content">Cisco CCNA</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/aws-certified-developer-associate/"><span class="udlite-block-list-item-content">AWS Certified Developer - Associate</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/comptia-security/"><span class="udlite-block-list-item-content">CompTIA Security+</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/microsoft-az-900/"><span class="udlite-block-list-item-content">Microsoft AZ-900</span></a></li>
+                                </ul>
+                            </div>
+                        </div-l1><span id="header-toggle-side-nav-popular-topics-of-142" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                        <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                            <div class="side-drawer--drawer-content--1xUDo">
+                                <ul class="unstyled-list udlite-block-list">
+                                    <li>
+                                        <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                            <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                <use xlink:href="#icon-previous"></use>
+                                            </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                    </li>
+                                </ul>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/courses/personal-development/personal-transformation/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--bold--P2i_i udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="subcategory-item-all"><span class="udlite-block-list-item-content">All Personal Transformation</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/life-coaching/"><span class="udlite-block-list-item-content">Life Coach Training</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/reiki/"><span class="udlite-block-list-item-content">Reiki</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/energy-healing/"><span class="udlite-block-list-item-content">Energy Healing</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/neuro-linguistic-programming/"><span class="udlite-block-list-item-content">Neuro-Linguistic Programming</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/mindfulness/"><span class="udlite-block-list-item-content">Mindfulness</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/personal-development/"><span class="udlite-block-list-item-content">Personal Development</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/personal-transformation/"><span class="udlite-block-list-item-content">Personal Transformation</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/neuroscience/"><span class="udlite-block-list-item-content">Neuroscience</span></a></li>
+                                    <li><a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral" data-purpose="topic-item" href="/topic/meditation/"><span class="udlite-block-list-item-content">Meditation</span></a></li>
+                                </ul>
+                            </div>
+                        </div-l1><span id="header-toggle-side-nav-student-profile" class="js-drawer-radio side-drawer--drawer-radio--2rJDZ" data-type="radio" data-name="header-toggle-side-nav-radio-group" data-checked="" style="display: none;"></span>
+                        <div-l1 class="mobile-nav--nav--1brOS js-drawer side-drawer--side-drawer--2btsf" style="z-index: 1;">
+                            <div class="side-drawer--drawer-content--1xUDo">
+                                <ul class="unstyled-list udlite-block-list">
+                                    <li>
+                                        <button type="button" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ mobile-nav--highlighted--M1nGW udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-loose udlite-block-list-item-neutral" data-css-toggle-id="header-toggle-side-nav-main">
+                                            <svg aria-label="Go back" focusable="false" class="udlite-icon udlite-icon-small udlite-block-list-item-icon">
+                                                <use xlink:href="#icon-previous"></use>
+                                            </svg><span class="udlite-block-list-item-content">Menu</span></button>
+                                    </li>
+                                </ul>
+                                <div class="udlite-heading-sm mobile-nav--nav-section-heading--3OccJ">Alerts</div>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/user/view-notifications/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">Notifications</span><span class="udlite-block-list-item-icon udlite-notification-badge udlite-notification-dot" title="undefined unread notifications"></span></a></li>
+                                    <li><a href="/message/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">Messages</span><span class="udlite-block-list-item-icon udlite-notification-badge udlite-notification-dot" title="undefined unread messages"></span></a></li>
+                                    <li><a href="/home/my-courses/wishlist/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">Wishlist</span></a></li>
+                                </ul>
+                                <div class="udlite-heading-sm mobile-nav--nav-section-heading--3OccJ">Account</div>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/user/edit-account/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">Account settings</span></a></li>
+                                    <li><a href="/user/edit-credit-cards/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">Payment methods</span></a></li>
+                                    <li><a href="/dashboard/credit-history/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">Udemy credits</span></a></li>
+                                    <li><a href="/dashboard/purchase-history/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">Purchase history</span></a></li>
+                                </ul>
+                                <div class="udlite-heading-sm mobile-nav--nav-section-heading--3OccJ">Profile</div>
+                                <ul class="unstyled-list udlite-block-list mobile-nav--nav-section--Fc5GU">
+                                    <li><a href="/user/edit-profile/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-md mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">Edit profile</span></a></li>
+                                    <li>
+                                        <div class="mobile-nav--nav-item--1hfFJ udlite-block-list-item udlite-block-list-item-large udlite-block-list-item-neutral udlite-text-md"><span class="udlite-block-list-item-content">Log out</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div-l1>
+                    </nav>
+                    <button type="button" class="udlite-btn udlite-btn-large udlite-btn-secondary udlite-heading-md udlite-btn-icon udlite-btn-icon-large udlite-btn-icon-round side-drawer--close-btn--B3lni close-button--close-btn--CjQjb" data-purpose="close-btn" data-css-toggle-id="header-toggle-side-nav">
+                        <svg aria-label="Close side drawer" focusable="false" class="udlite-icon udlite-icon-medium udlite-icon-color-neutral">
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div label="Close search" role="presentation" class="udlite-btn udlite-btn-large udlite-btn-link udlite-heading-md full-page-overlay--full-page-overlay--2EGvi" data-css-toggle-id="header-toggle-search-bar" aria-hidden="false" style="z-index: 1;"></div>
+        </div>
+        <div class="udlite-text-sm header--header--3sK1h header--flex-middle--2Xqjv" data-purpose="header" aria-hidden="false">
+            <div class="header--skip-to-content--2TkJB">
+                <button type="button" class="udlite-btn udlite-btn-large udlite-btn-primary udlite-heading-md header--skip-to-content-btn--13XyF"><span aria-hidden="true" class="header--skip-to-content-shadow--1FrgD"></span><span style="margin:0">Skip to content</span></button>
+            </div>
+            <a href="/" class="header--flex-middle--2Xqjv header--logo--bdAod"><img src="/staticx/udemy/images/v6/logo-coral.svg" alt="Udemy" width="110" height="32"></a>
+            <nav class="header--gap-button--3bIww popover--popover--t3rNO popover--popover-hover--14ngr">
+                <button type="button" id="u951-popover-trigger--1" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="u951-popover-content--2" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md js-header-button header--dropdown-button--1BviY"><span class="udlite-text-sm header--dropdown-button-text--2jtIM">Categories</span></button>
+                <div id="u951-popover-content--2" aria-labelledby="u951-popover-trigger--1" class="udlite-popover-position-bottom-start popover--popover-content--1Nnxz" style="top:100%;left:0">
+                    <div class="list-menu--list-menu--1IWp4 browse-nav--nav-container--2QiNy">
+                        <div class="js-browse-nav-level-one browse-nav--nav--1WzbY">
+                            <ul class="unstyled-list udlite-block-list list-menu--section--BZ3j9">
+                                <li><a href="/courses/development/" id="header-browse-nav-category-288" data-id="288" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Development</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/business/" id="header-browse-nav-category-268" data-id="268" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Business</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/finance-and-accounting/" id="header-browse-nav-category-328" data-id="328" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-link" aria-haspopup="true" aria-expanded="true" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Finance &amp; Accounting</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/it-and-software/" id="header-browse-nav-category-294" data-id="294" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">IT &amp; Software</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/office-productivity/" id="header-browse-nav-category-292" data-id="292" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Office Productivity</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/personal-development/" id="header-browse-nav-category-296" data-id="296" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Personal Development</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/design/" id="header-browse-nav-category-269" data-id="269" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Design</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/marketing/" id="header-browse-nav-category-290" data-id="290" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Marketing</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/lifestyle/" id="header-browse-nav-category-274" data-id="274" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Lifestyle</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/photography/" id="header-browse-nav-category-273" data-id="273" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Photography</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/health-and-fitness/" id="header-browse-nav-category-276" data-id="276" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Health &amp; Fitness</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/music/" id="header-browse-nav-category-278" data-id="278" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Music</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                                <li><a href="/courses/teaching-and-academics/" id="header-browse-nav-category-300" data-id="300" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="true" aria-expanded="false" aria-controls="header-browse-nav-level-two"><span class="udlite-block-list-item-content">Teaching &amp; Academics</span><svg aria-hidden="true" focusable="false" class="udlite-icon udlite-icon-xsmall udlite-block-list-item-icon"><use xlink:href="#icon-next"></use></svg></a></li>
+                            </ul>
+                        </div>
+                        <div id="header-browse-nav-level-two" class="js-browse-nav-level-two browse-nav--nav--1WzbY" style="display: block;" aria-labelledby="header-browse-nav-category-328">
+                            <ul class="unstyled-list udlite-block-list list-menu--section--BZ3j9">
+                                <li><a data-id="all-categories" href="/courses/finance-and-accounting/" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral"><span class="udlite-block-list-item-content">All Finance &amp; Accounting</span></a></li>
+                                <li><a href="/courses/finance-and-accounting/accounting-bookkeeping/" id="header-browse-nav-subcategory-530" data-id="530" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="false" aria-expanded="false"><span class="udlite-block-list-item-content">Accounting &amp; Bookkeeping</span></a></li>
+                                <li><a href="/courses/finance-and-accounting/compliance/" id="header-browse-nav-subcategory-532" data-id="532" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="false" aria-expanded="false"><span class="udlite-block-list-item-content">Compliance</span></a></li>
+                                <li><a href="/courses/finance-and-accounting/cryptocurrency-and-blockchain/" id="header-browse-nav-subcategory-534" data-id="534" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="false" aria-expanded="false"><span class="udlite-block-list-item-content">Cryptocurrency &amp; Blockchain</span></a></li>
+                                <li><a href="/courses/finance-and-accounting/economics/" id="header-browse-nav-subcategory-536" data-id="536" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="false" aria-expanded="false"><span class="udlite-block-list-item-content">Economics</span></a></li>
+                                <li><a href="/courses/finance-and-accounting/finance-management/" id="header-browse-nav-subcategory-540" data-id="540" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="false" aria-expanded="false"><span class="udlite-block-list-item-content">Finance</span></a></li>
+                                <li><a href="/courses/finance-and-accounting/finance-certification-and-exam-prep/" id="header-browse-nav-subcategory-542" data-id="542" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="false" aria-expanded="false"><span class="udlite-block-list-item-content">Finance Cert &amp; Exam Prep</span></a></li>
+                                <li><a href="/courses/finance-and-accounting/financial-modeling-and-analysis/" id="header-browse-nav-subcategory-544" data-id="544" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="false" aria-expanded="false"><span class="udlite-block-list-item-content">Financial Modeling &amp; Analysis</span></a></li>
+                                <li><a href="/courses/finance-and-accounting/investing-and-trading/" id="header-browse-nav-subcategory-546" data-id="546" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="false" aria-expanded="false"><span class="udlite-block-list-item-content">Investing &amp; Trading</span></a></li>
+                                <li><a href="/courses/finance-and-accounting/money-management-tools/" id="header-browse-nav-subcategory-548" data-id="548" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="false" aria-expanded="false"><span class="udlite-block-list-item-content">Money Management Tools</span></a></li>
+                                <li><a href="/courses/finance-and-accounting/taxes/" id="header-browse-nav-subcategory-550" data-id="550" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="false" aria-expanded="false"><span class="udlite-block-list-item-content">Taxes</span></a></li>
+                                <li><a href="/courses/finance-and-accounting/other-finance-and-accounting/" id="header-browse-nav-subcategory-552" data-id="552" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-text-sm list-menu--item--1crtM udlite-block-list-item udlite-block-list-item-small udlite-block-list-item-neutral" aria-haspopup="false" aria-expanded="false"><span class="udlite-block-list-item-content">Other Finance &amp; Economics</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <form action="/courses/search/" class="udlite-search-form-autocomplete header--search-bar--1_mS0">
+                <div class="udlite-search-form-autocomplete-input-group udlite-search-form-autocomplete-input-group-reversed udlite-form-group">
+                    <label for="u951-search-form-autocomplete--3" class="udlite-sr-only udlite-form-label udlite-heading-sm">Search for anything</label>
+                    <input placeholder="Search for anything" name="q" autocomplete="off" value="" id="u951-search-form-autocomplete--3" class="udlite-text-input udlite-text-input-small udlite-text-sm udlite-search-form-autocomplete-input js-header-search-field">
+                    <button type="submit" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md udlite-btn-icon udlite-btn-icon-large">
+                        <svg aria-label="Submit search" focusable="false" class="udlite-icon udlite-icon-medium udlite-icon-color-neutral">
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+            <div class="header--gap-button--3bIww header--group-a--2ZHik popover--popover--t3rNO popover--popover-hover--14ngr"><a href="https://business.udemy.com/request-demo/?ref=ufb_header&amp;mx_pg=home-page&amp;locale=en_US" target="_blank" rel="noopener" id="u951-popover-trigger--6" tabindex="0" aria-describedby="u951-popover-content--7" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md js-header-button header--dropdown-button--1BviY"><span class="udlite-text-sm header--dropdown-button-text--2jtIM">Udemy for Business</span></a>
+                <div id="u951-popover-content--7" class="udlite-popover-position-bottom-end popover--popover-content--1Nnxz" style="top: 100%; right: 0px;">
+                    <div class="header--menu--3jznE">
+                        <div class="panel-menu--panel--2bVgh">
+                            <div class="udlite-heading-lg panel-menu--gap-bottom--2CAzZ">Get your team access to over 4,000 top Udemy courses, anytime, anywhere.</div><a data-purpose="try-ufb-button" href="https://business.udemy.com/request-demo/?ref=ufb_header&amp;mx_pg=home-page&amp;locale=en_US" class="udlite-btn udlite-btn-large udlite-btn-primary udlite-heading-md panel-menu--cta--3_5Yy" target="_blank" rel="noopener"><span>Try Udemy for Business</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header--gap-button--3bIww header--group-b--2HJ8M popover--popover--t3rNO popover--popover-hover--14ngr"><a href="/teaching/?ref=teach_header" data-purpose="instructor-dropdown" id="u951-popover-trigger--8" tabindex="0" aria-describedby="u951-popover-content--9" class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md js-header-button header--dropdown-button--1BviY"><span class="udlite-text-sm header--dropdown-button-text--2jtIM">Teach on Udemy</span></a>
+                <div id="u951-popover-content--9" class="udlite-popover-position-bottom-end popover--popover-content--1Nnxz" style="top: 100%; right: 0px;">
+                    <div class="header--menu--3jznE">
+                        <div class="panel-menu--panel--2bVgh">
+                            <div class="udlite-heading-lg panel-menu--gap-bottom--2CAzZ">Turn what you know into an opportunity and reach millions around the world.</div><a href="/teaching/?ref=teach_header" class="udlite-btn udlite-btn-large udlite-btn-primary udlite-heading-md panel-menu--cta--3_5Yy"><span>Learn more</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="popover--popover--t3rNO popover--popover-hover--14ngr">
+                <a class="udlite-btn udlite-btn-large udlite-btn-ghost udlite-heading-md udlite-btn-icon udlite-btn-icon-large js-header-button header--dropdown-button--1BviY" href="/cart/" data-purpose="cart-icon" id="u951-popover-trigger--10" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="u951-popover-content--11">
+                    <svg aria-label="Cart" focusable="false" class="udlite-icon udlite-icon-medium udlite-icon-color-neutral">
+                        <use xlink:href="#icon-cart"></use>
+                    </svg>
+                </a>
+                <div id="u951-popover-content--11" aria-labelledby="u951-popover-trigger--10" class="udlite-popover-position-bottom-end popover--popover-content--1Nnxz" style="top: 100%; right: 0px;">
+                    <div class="header--menu--3jznE">
+                        <div class="panel-menu--panel--2bVgh">
+                            <div class="course-cards-skeleton--skeleton--2jKpO">
+                                <div class="course-cards-skeleton--row--3cMy_">
+                                    <div data-purpose="course-card-skeleton" class="course-card-skeleton--skeleton-flexible--2sSvz course-card-skeleton--skeleton-small--10NZF skeleton--skeleton--3Gfod" style="width: 25.6rem; max-width: 25.6rem; min-width: 25.6rem;"><span class="course-card-skeleton--image--26S6X block--block--1E7bD" style="width: 6.4rem; height: 6.4rem;"></span>
+                                        <div style="flex: 1 1 0%;"><span class="course-card-skeleton--title--2d2fw block--block--1E7bD"></span><span class="course-card-skeleton--line--cObxZ block--block--1E7bD"></span><span class="course-card-skeleton--line--cObxZ block--block--1E7bD"></span><span class="course-card-skeleton--line--cObxZ block--block--1E7bD"></span></div>
+                                        <div class="skeleton--shine--233IO"></div>
+                                    </div>
+                                </div>
+                                <div class="course-cards-skeleton--row--3cMy_">
+                                    <div data-purpose="course-card-skeleton" class="course-card-skeleton--skeleton-flexible--2sSvz course-card-skeleton--skeleton-small--10NZF skeleton--skeleton--3Gfod" style="width: 25.6rem; max-width: 25.6rem; min-width: 25.6rem;"><span class="course-card-skeleton--image--26S6X block--block--1E7bD" style="width: 6.4rem; height: 6.4rem;"></span>
+                                        <div style="flex: 1 1 0%;"><span class="course-card-skeleton--title--2d2fw block--block--1E7bD"></span><span class="course-card-skeleton--line--cObxZ block--block--1E7bD"></span><span class="course-card-skeleton--line--cObxZ block--block--1E7bD"></span><span class="course-card-skeleton--line--cObxZ block--block--1E7bD"></span></div>
+                                        <div class="skeleton--shine--233IO"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header--gap-auth-button--7KoL0"><a data-purpose="header-login" href="https://www.udemy.com/join/login-popup/?locale=en_US&amp;response_type=html&amp;next=https%3A%2F%2Fwww.udemy.com%2F" class="udlite-btn udlite-btn-small udlite-btn-secondary udlite-heading-sm"><span>Log in</span></a></div>
+            <div class="header--gap-auth-button--7KoL0"><a data-purpose="header-signup" href="https://www.udemy.com/join/signup-popup/?locale=en_US&amp;response_type=html&amp;next=https%3A%2F%2Fwww.udemy.com%2F" class="udlite-btn udlite-btn-small udlite-btn-primary udlite-heading-sm"><span>Sign up</span></a></div>
+        </div>
+    </div>
+</body>
+</html>
